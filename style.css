@@ -1,3 +1,4 @@
+
 body {
   margin: 0;
   font-family: sans-serif;
@@ -5,95 +6,24 @@ body {
   flex-direction: column;
   height: 100vh;
 }
-header {
+header, footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
-  font-weight: bold;
-  font-size: 24px; /* tăng từ mặc định lên 150% */
+  height: 10%;
+  padding: 0 10px;
 }
 main {
-  flex-grow: 1;
-  padding: 10px;
-}
-textarea {
-  width: 100%;
-  height: 60vh;
-  font-size: 18px;
-  padding: 10px;
-  box-sizing: border-box;
-  border: 1px solid #000;
-  resize: none;
-}
-footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  background: #fff;
-  display: flex;
-  justify-content: space-around;
-  padding: 10px 0;
-  border-top: 1px solid #ccc;
-}
-.icon {
-  font-size: 36px; /* footer icons: 150% */
-  background: none;
-  border: none;
-}
-
-/* Thư viện ẩn/hiện */
-#library {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #ffffffee;
-  z-index: 1000;
-  padding: 20px;
+  flex: 1;
   overflow-y: auto;
-}
-.library-content h3 {
-  margin-top: 20px;
-}
-.library-content ul {
-  list-style: none;
-  padding-left: 0;
-}
-.library-content li {
-  margin: 5px 0;
-  font-size: 18px;
-}
-.download-btn {
-  margin-left: 10px;
-  padding: 4px 8px;
-}
-.hidden {
-  display: none;
-}
-
-.back-btn {
-  font-size: 18px;
-  margin-bottom: 10px;
-}
-
-#contentBox {
-  width: 100%;
-  height: 60vh;
-  border: 1px solid #000;
   padding: 10px;
-  box-sizing: border-box;
-  overflow-y: auto;
-  font-size: 18px;
 }
 .example {
-  padding: 6px 8px;
-  margin-bottom: 6px;
-  background: #f9f9f9;
-  border-radius: 4px;
-  cursor: pointer;
+  padding: 8px;
+  margin-bottom: 4px;
+  border: 1px solid #ccc;
+  font-weight: bold;
 }
-.example:hover {
-  background: #e0e0e0;
+.footer-icon, .header-icon {
+  font-size: 150%;
 }
